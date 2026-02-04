@@ -1,4 +1,4 @@
-# asleveldevil
+# Asleveldevil
 
 A minimal web-based platformer inspired by deceptive game design and troll mechanics.  
 The game intentionally breaks player expectations by changing rules mid-level and punishing assumptions.
