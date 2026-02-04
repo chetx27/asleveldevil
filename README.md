@@ -38,19 +38,20 @@ The challenge is learning which rules are real.
    git clone https://github.com/chetx27/asleveldevil.git
 Open the project folder in VS Code.
 
-Open index.html in a browser
+
+2. Open index.html in a browser
 or use the Live Server extension for easier testing.
 
-Project Purpose
+3. Project Purpose
 This project was created as a time-pass and learning exercise to explore:
 
-Game logic
+4. Game logic
 
-Collision detection
+5. Collision detection
 
-Player psychology in game design
+6. Player psychology in game design
 
-Writing clean, framework-free JavaScript
+7. Writing clean, framework-free JavaScript
 
 ---
 
