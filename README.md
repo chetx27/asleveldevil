@@ -52,10 +52,11 @@ Player psychology in game design
 
 Writing clean, framework-free JavaScript
 
-License
+---
+
+### License
 This project is open for learning and experimentation.
 Assets and logic are original and not copied from any existing game.
-
 
 ---
 
@@ -69,4 +70,5 @@ README.md
 ```bash
 git add README.md
 git commit -m "add README"
-git push
+git push 
+
