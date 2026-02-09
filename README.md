@@ -59,17 +59,4 @@ This project was created as a time-pass and learning exercise to explore:
 This project is open for learning and experimentation.
 Assets and logic are original and not copied from any existing game.
 
----
-
-### How to add it to your repo
-
-1. In your project folder, create a file:
-README.md
-
-2. Paste the content above
-3. Run:
-```bash
-git add README.md
-git commit -m "add README"
-git push 
-
+--- 
