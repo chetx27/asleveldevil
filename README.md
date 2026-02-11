@@ -1,62 +1,91 @@
 # Asleveldevil
 
-A minimal web-based platformer inspired by deceptive game design and troll mechanics.  
-The game intentionally breaks player expectations by changing rules mid-level and punishing assumptions.
+Asleveldevil is a small browser-based platformer that intentionally **misleads the player**.
+It looks like a normal level, but hidden rules and one-time traps are designed to punish assumptions.
 
-## Overview
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Gameplay Highlights](#gameplay-highlights)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Controls](#controls)
+- [Project Structure](#project-structure)
+- [Design Notes](#design-notes)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
 
-This project is a simple 2D platformer built using HTML, CSS, and vanilla JavaScript.  
-While the visuals and controls are minimal, the gameplay is intentionally unfair and unpredictable, inspired by games that rely on surprise rather than difficulty.
+## Project Overview
+This project is a lightweight 2D platformer built with plain HTML, CSS, and JavaScript.
+The core idea is psychological: players are encouraged to trust what they see, then the game breaks that trust.
 
-The goal is simple: reach the exit.  
-The challenge is learning which rules are real.
+Despite its small size, the project demonstrates key game-dev fundamentals:
+- game loops (`update` + `draw`)
+- keyboard input handling
+- collision detection (AABB)
+- state reset and level re-initialization
 
-## Features
-
-- Basic 2D platformer mechanics
-- Fake platforms that disappear
-- An exit that betrays the player on first contact
-- Intentionally misleading level design
-- No external libraries or frameworks
-
-## Controls
-
-- Left Arrow: Move left  
-- Right Arrow: Move right  
-- Up Arrow: Jump  
+## Gameplay Highlights
+- **Deceptive platform layout** with disappearing (fake) platforms
+- **Betrayal mechanic** where the door defeats the player once before allowing victory
+- **Fast restart loop** to support trial-and-error gameplay
+- **No frameworks** and no external dependencies
 
 ## Tech Stack
+- **HTML5** for structure and canvas hosting
+- **CSS3** for styling
+- **Vanilla JavaScript** for game logic and rendering
 
-- HTML5 Canvas
-- CSS3
-- Vanilla JavaScript
+## Getting Started
+### 1) Clone the repository
+```bash
+git clone https://github.com/chetx27/asleveldevil.git
+cd asleveldevil
+```
 
-## How to Run Locally
+### 2) Run the game
+Choose one of the following:
+- Open `index.html` directly in your browser, or
+- Use a local static server (recommended), for example:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/chetx27/asleveldevil.git
-Open the project folder in VS Code.
+```bash
+python3 -m http.server 8000
+```
+Then open `http://localhost:8000`.
 
+## Controls
+- **Left Arrow**: Move left
+- **Right Arrow**: Move right
+- **Up Arrow**: Jump (only when grounded)
 
-2. Open index.html in a browser
-or use the Live Server extension for easier testing.
+## Project Structure
+```text
+.
+├── index.html   # Canvas host page
+├── style.css    # Basic UI styling
+├── game.js      # Core game logic and rendering
+└── README.md
+```
 
-3. Project Purpose
-This project was created as a time-pass and learning exercise to explore:
+## Design Notes
+The game intentionally favors surprise over fairness.
+It is built as a compact experiment in expectation management and playful frustration.
 
-4. Game logic
+## Roadmap
+Potential improvements:
+- Additional levels with unique trick mechanics
+- Basic sound effects and feedback cues
+- Restart button and pause support
+- Mobile input support
+- Lightweight score/time tracking
 
-5. Collision detection
+## Contributing
+Contributions are welcome. If you want to improve gameplay, readability, or polish:
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Open a pull request with a clear summary
 
-6. Player psychology in game design
-
-7. Writing clean, framework-free JavaScript
-
----
-
-### License
-This project is open for learning and experimentation.
-Assets and logic are original and not copied from any existing game.
-
---- 
+## License
+This repository is currently provided for learning and experimentation.
+If you plan to reuse or redistribute it, add a formal license file first.
